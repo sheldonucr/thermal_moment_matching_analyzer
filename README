@@ -1,0 +1,23 @@
+
+Theraml moment matching (TMM) analysis program, version 1.0
+
+April 20, 2015.
+
+TMM was developped by MSLAB (now it is called VSCLAB) at UC Riverside.
+
+TMM can perform fast transient analysis for thermal circuits modeling the VLSI chip and package drived by the piece-wise constant power inputs. TMM is alos called TMMPWC in the paper. TMMPWCis based on the observation that average power consumption of architecture level modules in microprocessors running typical workloads determines the trend of temperature variations. As a result, we can further speed up the thermal analysis by using piecewise constant average power inputs. To obtain the transient temperature changes due to initial condition and constant/average power inputs, numerically stable moment matching methods with enhanced pole searching methods is carried out to speed up on-line temperature tracking with high accuracy and low overhead.  The resulting thermal analysis algorithm has linear time complexity in run-time setting when average power inputs are applied.  Experimental results show that the resulting thermal analysis algorithms lead to 10x-100x speedup over the traditional integration-based transient analysis with small accuracy loss.
+
+Please refere the following paper for more detailed description of this algorithm:
+
+P. Liu, Z. Qi, H. Li, L. Jin, W. Wu, S. X.-D. Tan and J. Yang, “Fast thermal simulation for architecture level dynamic thermal management”, Proc. IEEE/ACM International Conf. on Computer-Aided Design (ICCAD), pp.639-644, San Jose, CA, Nov. 2005. 
+
+
+P. Liu, H. Li, L. Jin, W. Wu, S. X.-D. Tan and J. Yang, “Fast thermal simulation for runtime temperature tracking and management”, IEEE Transactions on Computer-Aided Design of Integrated Circuits and System, vol. 25, no. 12, pp. 2882-2893,  2006.
+
+
+
+
+The source codes are in the src directory and the related documents are in the docs directory.
+
+Please contact Dr. Sheldon Tan (stan@ece.ucr.edu) for any comments and suggestions.
+

@@ -1,0 +1,30 @@
+
+Thermal moment matching (TMM) analysis program
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Contact: Pu Liu, Sheldon X.-D. Tan
+         Mixed-Signal NanometerVLSI Research Lab.
+         Department of Electrical Engineering
+         University of California, Riverside
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+'main.c' is the main function.It can be changed for different thermal model and different powertrace.
+
+'tmm.c' is the core function to be called by main function, which will call two functions, named 'poleCompute.c' and 'residueCompute.c'.
+
+'poleCompute.c' is to compute the system poles by Arnoldi iteration based model reduction.
+
+'residueCompute.c' is to compute the residues with considering initial state and current input by pade approximation based moment matching.
+
+'util.c' includes some utility routine, such as LU decomposition, Eigenvalue decomposition, and matrix operations.
+
+'util.h' is the header file.
+
+'Makefile' is used for compiling program. The default name is 'tmm'.
+
+'p4northwood.mf' is the thermal model for P4 Northwood CPU, which is written in Matlab matrix form.
+
+
+In order to run this program,
+ typing "tmm -i  p4northwood.mf -q 5", which means that we perform the analysis
+using the input file p4northwood.mf with reduction order 5. 
