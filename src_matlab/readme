@@ -1,0 +1,13 @@
+=================================================================
+A demo (demotmm.m) is provided to show how to use our tool.
+
+Input files provided by intel:
+datafile.m    -- Data from the original Excel file
+nodeinfo.m    -- Netlist infos
+
+The functions provided by our tool:
+tmm.p               -- core algorithm
+mm.p, mm_2.p,eks.p  -- functions used by tmm.p
+Build_GCB.m         -- extract RC matrix from netlist infos
+Get_trace.m         -- extract timestamp/power from input data traces.
+====================================================
