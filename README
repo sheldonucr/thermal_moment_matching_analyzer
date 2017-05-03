@@ -1,6 +1,7 @@
 
 Theraml moment matching (TMM) analysis program, version 1.0
 
+
 April 20, 2015.
 
 TMM was developped by MSLAB (now it is called VSCLAB) at UC Riverside.
@@ -13,8 +14,6 @@ P. Liu, Z. Qi, H. Li, L. Jin, W. Wu, S. X.-D. Tan and J. Yang, “Fast thermal s
 
 
 P. Liu, H. Li, L. Jin, W. Wu, S. X.-D. Tan and J. Yang, “Fast thermal simulation for runtime temperature tracking and management”, IEEE Transactions on Computer-Aided Design of Integrated Circuits and System, vol. 25, no. 12, pp. 2882-2893,  2006.
-
-
 
 
 The source codes are in the src directory and the related documents are in the docs directory.
